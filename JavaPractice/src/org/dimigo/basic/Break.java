@@ -2,17 +2,19 @@ package org.dimigo.basic;
 
 import java.util.Scanner;
 
-public class While {
+public class Break {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		int menu;
+		int menu=0;
 		
 		// <게임 메뉴>>
 		// 1. 공격
 		// 2. 수비
 		// 3. 종료
 		
-		do{
+		// 무한루프 이용 (break 문 사용)
+		while(true){
+			if(menu==3) break;
 			System.out.println("-----------------------------");
 			System.out.println("<< 게임 메뉴 >>");
 			System.out.println("1. 공격");
@@ -34,7 +36,7 @@ public class While {
 				System.out.println("없는 메뉴입니다.");
 				break;
 			}
-		} while(menu!=3);
+		}
 		sc.close();
 	}
 }
