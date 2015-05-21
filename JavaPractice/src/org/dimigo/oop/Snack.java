@@ -39,27 +39,14 @@ public class Snack {
 	}
 	
 	public void printSnack(){
-		System.out.println("ÀÌ¸§ : "+this.name);
-		System.out.println("Á¦Á¶»ç : "+this.company);
-		System.out.println("°¡°İ : "+String.format("%,d",  price)+"¿ø");
-		System.out.println("°³¼ö : "+number+"°³");
+		System.out.println("ì´ë¦„ : "+this.name);
+		System.out.println("ì œì¡°ì‚¬ : "+this.company);
+		System.out.println("ê°€ê²© : "+String.format("%,d",  price)+"ì›");
+		System.out.println("ê°œìˆ˜ : "+number+"ê°œ");
 	}
 	
 	public int calcPrice(){
 		return price*number;
 	}
 	
-	
-	public static void main(String[] args){
-		Snack snack[] = {new Snack("»õ¿ì±ø", "³ó½É", 1100, 2),
-				new Snack("ÄÜ¯…", "Å©¶ó¿î", 1200, 1),
-				new Snack("Çã´Ï¹öÅÍÄ¨", "ÇØÅÂ", 1500, 4)};
-		int sum=0;
-		for(int i=0; i<3; i++){
-			snack[i].printSnack();
-			System.out.println();
-			sum+=snack[i].calcPrice();
-		}
-		System.out.println("ÃÑ ±¸¸Å ±İ¾× : "+String.format("%,d", sum)+"¿ø");
-	}
 }
