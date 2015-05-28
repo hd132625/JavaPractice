@@ -9,12 +9,6 @@ public class TypeCasting {
 		
 		System.out.println(b + " " + s + " " + i + " " + l);
 		
-		// 강제 형변환
-		long l1 = 100;
-		int i1 = (int)l1;
-		short s1 = (short)i1;
-		byte b1 = (byte)s1;
-		
 		System.out.println(b + " " + s + " " + i + " " + l);
 		
 		long l2 = 10000000000l;

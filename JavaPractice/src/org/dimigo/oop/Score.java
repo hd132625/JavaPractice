@@ -6,19 +6,20 @@ public class Score {
 		Scanner sc = new Scanner(System.in);
 		int kor, math, eng;
 		
-		System.out.printf("±¹¾î Á¡¼ö ÀÔ·Â => ");
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ => ");
 		kor = sc.nextInt();
-		System.out.printf("¼öÇÐ Á¡¼ö ÀÔ·Â => ");
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ => ");
 		math = sc.nextInt();
-		System.out.printf("¿µ¾î Á¡¼ö ÀÔ·Â => ");
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ => ");
 		eng = sc.nextInt();
 		
-		String display = new StringBuilder().append("<<Á¡¼ö Ãâ·Â>>\n")
-				.append("±¹¾î Á¡¼ö : "+kor+"Á¡\n")
-				.append("¼öÇÐ Á¡¼ö : "+math+"Á¡\n")
-				.append("¿µ¾î Á¡¼ö : "+eng+"Á¡\n")
-				.append("ÃÑÁ¡ : "+(kor+eng+math)+"Á¡\n")
-				.append("Æò±Õ : "+String.format("%.1f", (kor+eng+math)/3.0)+"Á¡\n").toString();
+		String display = new StringBuilder().append("<<ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½>>\n")
+				.append("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : "+kor+"ï¿½ï¿½\n")
+				.append("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : "+math+"ï¿½ï¿½\n")
+				.append("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : "+eng+"ï¿½ï¿½\n")
+				.append("ï¿½ï¿½ï¿½ï¿½ : "+(kor+eng+math)+"ï¿½ï¿½\n")
+				.append("ï¿½ï¿½ï¿½ : "+String.format("%.1f", (kor+eng+math)/3.0)+"ï¿½ï¿½\n").toString();
 		System.out.println(display);
+		sc.close();
 	}
 }
