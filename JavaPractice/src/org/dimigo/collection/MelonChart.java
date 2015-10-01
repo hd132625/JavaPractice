@@ -7,8 +7,8 @@ public class MelonChart {
 	public static void main(String[] args){
 		List<Music> melon = new ArrayList<>();
 		melon.add(new Music("바람이나 좀 쐐", "개리"));
-		melon.add(new Music("보통연애", "박"));
-		melon.add(new Music("취향저격", "개리"));
+		melon.add(new Music("보통연애", "박경"));
+		melon.add(new Music("취향저격", "iKON"));
 		
 		System.out.println("--<< 멜론 차트 >>--");
 		printList(melon);
